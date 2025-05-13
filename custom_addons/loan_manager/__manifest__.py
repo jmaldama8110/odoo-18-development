@@ -9,6 +9,8 @@
     # data files always loaded at installation
     'data': [
         'security/ir.model.access.csv',
+        'views/loan_manager_loan_product_views.xml',
+        'views/loan_manager_menus.xml'
     ]
 
 }

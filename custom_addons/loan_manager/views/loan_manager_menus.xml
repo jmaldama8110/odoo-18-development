@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+
+<odoo>
+    <menuitem id="loan_manager_root" name="Loan Manager">
+        <menuitem id="loan_manager_loan_products_menu1" name="Loan Products">
+            <menuitem id="loan_manager_loan_product_menu_action" action="loan_manager_loan_product_action"/>
+        </menuitem>
+    </menuitem>
+</odoo>
