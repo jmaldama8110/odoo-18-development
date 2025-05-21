@@ -1,2 +1,5 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
 access_loan_manager_loan_product,access_loan_manager_loan_product,model_loan_manager_loan_product,base.group_user,1,1,1,1
+access_loan_manager_loan_product_type,access_loan_manager_loan_product_type,model_loan_manager_loan_product_type,base.group_user,1,1,1,1
+access_loan_manager_loan_product_dest,access_loan_manager_loan_product_dest,model_loan_manager_loan_product_dest,base.group_user,1,1,1,1
+access_loan_manager_product_cycle,access_loan_manager_product_cycle,model_loan_manager_product_cycle,base.group_user,1,1,1,1

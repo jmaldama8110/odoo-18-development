@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+    <record id="loan_manager_product_view_form" model="ir.ui.view">
+        <field name="name">loan_manager.loan.product.view.form</field>
+        <field name="model">loan_manager.loan_product</field>
+        <field name="arch" type="xml">
+            <form string="Loan Product">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                        <group>
+                            <field name="short_name"/>
+                        </group>
+                        <group>
+                            <field name="state"/>
+                        </group>
+                        <group>
+                            <field name="product_type_id"/>
+                        </group>
+
+                    </group>
+                    <notebook>
+                        <page string="Description">
+                            <group>
+                                <group><field name="min_amount"/></group>
+                                <group><field name="max_amount"/></group>
+                                <group><field name="default_amount"/></group>
+                                <group><field name="step_amount"/></group>
+                                <group><field name="interest_rate"/></group>
+                                <group><field name="product_destination_ids" widget="many2many_tags"/></group>
+                            </group>
+
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+
+        </field>
+    </record>
+
+</odoo>

@@ -5,4 +5,20 @@
         <field name="res_model">loan_manager.loan_product</field>
         <field name="view_mode">list,form</field>
     </record>
+
+    <record id="loan_manager_loan_product_type_action" model="ir.actions.act_window">
+        <field name="name">Product type</field>
+        <field name="res_model">loan_manager.loan_product.type</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="loan_manager_loan_product_dest_action" model="ir.actions.act_window">
+        <field name="name">Loan destinations</field>
+        <field name="res_model">loan_manager.loan_product.dest</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <record id="loan_manager_product_cycle_action" model="ir.actions.act_window">
+        <field name="name">Product cycle</field>
+        <field name="res_model">loan_manager.product_cycle</field>
+        <field name="view_mode">list,form</field>
+    </record>
 </odoo>

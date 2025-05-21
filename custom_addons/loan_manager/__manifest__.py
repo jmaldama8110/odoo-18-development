@@ -10,7 +10,12 @@
     'data': [
         'security/ir.model.access.csv',
         'views/loan_manager_loan_product_views.xml',
-        'views/loan_manager_menus.xml'
+        'views/loan_manager_menus.xml',
+        'views/loan_manager_product_view_list.xml',
+        'views/loan_manager_product_view_form.xml',
+        'views/loan_manager_product_view_search.xml',
+        'views/loan_manager_product_cycle_view_form.xml',
+        'views/loan_manager_product_cycle_view_list.xml'
     ]
 
 }

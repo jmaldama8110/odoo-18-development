@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+    <record id="loan_manager_loan_product_view_list" model="ir.ui.view">
+        <field name="name">loan_manager.loan_product.view.list</field>
+        <field name="model">loan_manager.loan_product</field>
+        <field name="arch" type="xml">
+            <list string="Loan products">
+                <field name="name"/>
+                <field name="state"/>
+                <field name="min_amount" />
+                <field name="max_amount" />
+                <field name="interest_rate" />
+            </list>
+        </field>
+    </record>
+
+</odoo>

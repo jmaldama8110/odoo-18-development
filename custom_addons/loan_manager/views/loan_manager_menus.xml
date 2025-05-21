@@ -2,8 +2,14 @@
 
 <odoo>
     <menuitem id="loan_manager_root" name="Loan Manager">
-        <menuitem id="loan_manager_loan_products_menu1" name="Loan Products">
+
+        <menuitem id="loan_manager_loan_product_menu2" name="Settings">
             <menuitem id="loan_manager_loan_product_menu_action" action="loan_manager_loan_product_action"/>
+            <menuitem id="loan_manager_loan_product_type_menu_action" action="loan_manager_loan_product_type_action"/>
+            <menuitem id="loan_manager_loan_product_dest_menu_action" action="loan_manager_loan_product_dest_action"/>
+            <menuitem id="loan_manager_product_cycle_menu_action" action="loan_manager_product_cycle_action"/>
         </menuitem>
+
+
     </menuitem>
 </odoo>

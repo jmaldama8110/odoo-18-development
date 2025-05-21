@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+    <record id="loan_manager_product_cycle_view_list" model="ir.ui.view">
+        <field name="name">Cycle list</field>
+        <field name="model">loan_manager.product_cycle</field>
+        <field name="arch" type="xml">
+            <list string="Loan products">
+                <field name="cycle_number"/>
+                <field name="amount_limit" />
+                <field name="name"/>
+
+            </list>
+        </field>
+    </record>
+
+</odoo>
