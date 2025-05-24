@@ -34,6 +34,16 @@
                             </group>
 
                         </page>
+                        <page string="Calculator">
+                            <group><field name="calc_loan_amount" /></group>
+                             <group><field name="calc_frequency" /></group>
+                             <group><field name="calc_term" /></group>
+                             <group><field name="calc_tax" /></group>
+                             <group><field name="calc_repay_amount" /></group>
+                        </page>
+                        <page string="Cycle levels">
+                            <field name="cycle_ids" />
+                        </page>
                     </notebook>
                 </sheet>
             </form>

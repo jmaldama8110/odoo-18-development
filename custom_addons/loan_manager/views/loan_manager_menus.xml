@@ -7,7 +7,6 @@
             <menuitem id="loan_manager_loan_product_menu_action" action="loan_manager_loan_product_action"/>
             <menuitem id="loan_manager_loan_product_type_menu_action" action="loan_manager_loan_product_type_action"/>
             <menuitem id="loan_manager_loan_product_dest_menu_action" action="loan_manager_loan_product_dest_action"/>
-            <menuitem id="loan_manager_product_cycle_menu_action" action="loan_manager_product_cycle_action"/>
         </menuitem>
 
 

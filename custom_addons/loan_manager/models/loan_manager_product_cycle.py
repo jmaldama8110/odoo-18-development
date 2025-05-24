@@ -7,3 +7,4 @@ class LoanManagerProductCycle(models.Model):
     name = fields.Char(string='Level name', required=True)
     cycle_number = fields.Integer(string='Cycle number', required=True)
     amount_limit = fields.Float(string='Amount limit', required=True)
+    product_id = fields.Many2one("loan_manager.loan_product", required=True, string='Loan product')

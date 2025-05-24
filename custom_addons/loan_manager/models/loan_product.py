@@ -1,4 +1,4 @@
-from odoo import models,fields
+from odoo import api,models,fields
 from datetime import date,timedelta
 
 class LoanProduct(models.Model):
@@ -20,8 +20,20 @@ class LoanProduct(models.Model):
             return today + timedelta(days=365)
     date_end = fields.Date("To", default=_date_plus_one_month)
 
-    state = fields.Selection([ ('d','Draft'),('a','Approved')],default='d',string='Status',required=True);
+    state = fields.Selection([ ('d','Draft'),('a','Approved')],default='d',string='Status',required=True)
     product_type_id = fields.Many2one("loan_manager.loan_product.type", required=True)
 
-    product_destination_ids = fields.Many2many("loan_manager.loan_product.dest", required=True);
+    product_destination_ids = fields.Many2many("loan_manager.loan_product.dest", required=True)
+
+    cycle_ids = fields.One2many("loan_manager.product_cycle","product_id")
+
+
+    # loan calculator
+    calc_loan_amount = fields.Float("Loan amount", required=True, default=1000)
+    calc_frequency = fields.Selection([ ('w','Weekly'),('f','Fortnightly'),('m','Monthly')],default='m',string='Status')
+    calc_term = fields.Integer("Term", default=6)
+    calc_tax = fields.Float('Tax', default=0.16)
+
+    calc_repay_amount = fields.Float(string="Repay amount")
+    AQUI NOS QUEDAMOS
 
